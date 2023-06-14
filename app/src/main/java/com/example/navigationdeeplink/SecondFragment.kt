@@ -26,12 +26,6 @@ class SecondFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-//        val navHostFragment =
-//            activity?.supportFragmentManager?.findFragmentById(R.id.fragmentContainer) as NavHostFragment
-//        val navController = navHostFragment.navController
-//        val navGraph = findNavController().navInflater.inflate(R.navigation.nav_second)
-//        Log.d("YOYOYOYOYOYOYOYO", "${navGraph.startDestDisplayName}")
-//        navController.graph = navGraph
         shardViewModel.onGetTypeSecond.observe(viewLifecycleOwner) { isType1 ->
             if (isType1) {
                 findNavController().navigate(SecondFragmentDirections.actionSecondFragmentToSecondTypeOneFragment())
