@@ -1,0 +1,1 @@
+adb shell am start -W -a android.intent.action.VIEW -d "test://test.deeplink.com/detail2" "com.example.navigationdeeplink"

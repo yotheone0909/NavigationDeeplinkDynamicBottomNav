@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_second"
+    app:startDestination="@id/secondFragment">
+
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.navigationdeeplink.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_secondFragment_to_secondTypeOneFragment"
+            app:destination="@id/secondTypeOneFragment"
+            app:popUpTo="@id/secondFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_secondFragment_to_secondTypeTwoFragment"
+            app:destination="@id/secondTypeTwoFragment"
+            app:popUpTo="@id/secondFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detail2Fragment"
+        android:name="com.example.navigationdeeplink.Detail2Fragment"
+        android:label="fragment_detail2"
+        tools:layout="@layout/fragment_detail2">
+        <deepLink
+            android:id="@+id/deepLink"
+            android:autoVerify="true"
+            app:uri="test://test.deeplink.com/detail2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/secondTypeOneFragment"
+        android:name="com.example.navigationdeeplink.SecondTypeOneFragment"
+        android:label="fragment_second_type_one"
+        tools:layout="@layout/fragment_second_type_one" >
+        <action
+            android:id="@+id/action_secondTypeOneFragment_to_secondDetailFragment"
+            app:destination="@id/secondDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondTypeTwoFragment"
+        android:name="com.example.navigationdeeplink.SecondTypeTwoFragment"
+        android:label="fragment_second_type_two"
+        tools:layout="@layout/fragment_second_type_two" >
+        <action
+            android:id="@+id/action_secondTypeTwoFragment_to_detail2Fragment"
+            app:destination="@id/detail2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondDetailFragment"
+        android:name="com.example.navigationdeeplink.SecondDetailFragment"
+        android:label="fragment_second_detail"
+        tools:layout="@layout/fragment_second_detail" >
+        <action
+            android:id="@+id/action_secondDetailFragment_to_detail2Fragment"
+            app:destination="@id/detail2Fragment" />
+    </fragment>
+</navigation>

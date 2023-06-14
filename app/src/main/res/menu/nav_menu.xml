@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/baseline_ads_click_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_second"
+        android:icon="@drawable/baseline_ads_click_24"
+        android:title="Second" />
+    <item
+        android:id="@+id/nav_third"
+        android:icon="@drawable/baseline_ads_click_24"
+        android:title="Third" />
+    <item
+        android:id="@+id/nav_fourth"
+        android:icon="@drawable/baseline_ads_click_24"
+        android:title="Fourth" />
+</menu>
