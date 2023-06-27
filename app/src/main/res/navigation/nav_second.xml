@@ -9,17 +9,13 @@
         android:id="@+id/secondFragment"
         android:name="com.example.navigationdeeplink.SecondFragment"
         android:label="fragment_second"
-        tools:layout="@layout/fragment_second" >
+        tools:layout="@layout/fragment_second">
         <action
             android:id="@+id/action_secondFragment_to_secondTypeOneFragment"
-            app:destination="@id/secondTypeOneFragment"
-            app:popUpTo="@id/secondFragment"
-            app:popUpToInclusive="true" />
+            app:destination="@id/secondTypeOneFragment" />
         <action
             android:id="@+id/action_secondFragment_to_secondTypeTwoFragment"
-            app:destination="@id/secondTypeTwoFragment"
-            app:popUpTo="@id/secondFragment"
-            app:popUpToInclusive="true" />
+            app:destination="@id/secondTypeTwoFragment" />
     </fragment>
 
     <fragment
@@ -37,7 +33,7 @@
         android:id="@+id/secondTypeOneFragment"
         android:name="com.example.navigationdeeplink.SecondTypeOneFragment"
         android:label="fragment_second_type_one"
-        tools:layout="@layout/fragment_second_type_one" >
+        tools:layout="@layout/fragment_second_type_one">
         <action
             android:id="@+id/action_secondTypeOneFragment_to_secondDetailFragment"
             app:destination="@id/secondDetailFragment" />
@@ -46,7 +42,7 @@
         android:id="@+id/secondTypeTwoFragment"
         android:name="com.example.navigationdeeplink.SecondTypeTwoFragment"
         android:label="fragment_second_type_two"
-        tools:layout="@layout/fragment_second_type_two" >
+        tools:layout="@layout/fragment_second_type_two">
         <action
             android:id="@+id/action_secondTypeTwoFragment_to_detail2Fragment"
             app:destination="@id/detail2Fragment" />
@@ -55,7 +51,7 @@
         android:id="@+id/secondDetailFragment"
         android:name="com.example.navigationdeeplink.SecondDetailFragment"
         android:label="fragment_second_detail"
-        tools:layout="@layout/fragment_second_detail" >
+        tools:layout="@layout/fragment_second_detail">
         <action
             android:id="@+id/action_secondDetailFragment_to_detail2Fragment"
             app:destination="@id/detail2Fragment" />

@@ -34,12 +34,14 @@ class SecondFragment : Fragment() {
                 val carInstallmentNavGraph =
                     graph.findNode(R.id.nav_second) as NavGraph
                 carInstallmentNavGraph.setStartDestination(R.id.secondTypeOneFragment)
+//                findNavController().setGraph(carInstallmentNavGraph, null)
                 findNavController().navigate(SecondFragmentDirections.actionSecondFragmentToSecondTypeOneFragment())
             } else {
                 val graph = findNavController().graph
                 val carInstallmentNavGraph =
                     graph.findNode(R.id.nav_second) as NavGraph
                 carInstallmentNavGraph.setStartDestination(R.id.secondTypeTwoFragment)
+//                findNavController().setGraph(carInstallmentNavGraph, null)
                 findNavController().navigate(SecondFragmentDirections.actionSecondFragmentToSecondTypeTwoFragment())
             }
         }
